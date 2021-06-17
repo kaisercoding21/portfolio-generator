@@ -10,7 +10,7 @@ const generateAbout = (aboutText) => {
   `;
 };
 
-const generateProjects = projectsArr => {
+const generateProjects = (projectsArr) => {
   return `
     <section class="my-3" id="portfolio">
       <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
@@ -50,17 +50,6 @@ const generateProjects = projectsArr => {
         .join('')}
       </div>
     </section>
-  `;
-};
-
-  return `
-  <section class="my-3" id="portfolio">
-  <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
-  <div class="flex-row justify-space-between">
-  ${featuredProjectHtmlArr.join('')}
-  ${nonFeaturedProjectHtmlArr.join('')}
-  </div>
-  </section>
   `;
 };
 
